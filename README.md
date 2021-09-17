@@ -4,9 +4,9 @@ This repo contains postgresql queries tht I have found useful for debugging, mai
 
 1. List all open connections to the database. 
 
-Useful to find out connection leaks of an application connecting to DB
+> Useful to find out connection leaks of an application connecting to DB
 
-SELECT 
+> SELECT 
     pid
     ,datname
     ,usename
