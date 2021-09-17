@@ -1,12 +1,12 @@
 # postgresql_meta
 
-This repo contains postgresql queries tht I have found useful for debugging, maintenance, management of postgresql database
+This repo contains postgresql queries that I have found useful for debugging, maintenance, management of postgresql database
 
 1. List all open connections to the database. 
 
-> Useful to find out connection leaks of an application connecting to DB
+>> Useful to find out connection leaks of an application connecting to DB
 
-> SELECT 
+>> **_SELECT 
     pid
     ,datname
     ,usename
@@ -18,6 +18,6 @@ This repo contains postgresql queries tht I have found useful for debugging, mai
     ,query
     ,state
 FROM pg_stat_activity
-WHERE state = 'active';
+WHERE state = 'active';_**
 
-Reference - https://stackoverflow.com/questions/27435839/how-to-list-active-connections-on-postgresql
+>> Reference - https://stackoverflow.com/questions/27435839/how-to-list-active-connections-on-postgresql
