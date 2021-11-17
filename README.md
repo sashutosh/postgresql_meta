@@ -21,3 +21,7 @@ FROM pg_stat_activity
 WHERE state = 'active';_**
 
     * Reference - https://stackoverflow.com/questions/27435839/how-to-list-active-connections-on-postgresql
+
+2. Convert epoch timestamp to date time
+* **select to_timestamp(cast(epoch_ms/1000 as bigint))::date**
+    * Reference - https://stackoverflow.com/questions/16609722/postgresql-how-to-convert-from-unix-epoch-to-date
